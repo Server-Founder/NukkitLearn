@@ -1,5 +1,9 @@
 # Nukkit教程整理
 
+#### 友情项目
+
+[基于java开发的SCP基金会服务端](https://github.com/jsmod2-java-c/JSmod2-Core)
+
 #### 关于本教程
 
 你好，感谢您能观看我们编写的教程。该教程在编写阶段，更新间隔可能会很长。
