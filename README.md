@@ -31,8 +31,8 @@ qq群号: 931210534
 
 #### 目录
 - 第一章 基础准备
-  - [如何搭建开发环境](https://github.com/Server-Founder/NukkitLearn/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0*%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83.md)
-  - 插件要素
+  - [如何搭建开发环境](第一章*如何搭建环境.md)
+  - [插件要素](第二章*插件要素.md)
   - 如何编写plugin.yml
   - 如何编写监听器
   - 如何编写指令
