@@ -6,7 +6,19 @@
 
 #### 关于本教程
 
-你好，感谢您能观看我们编写的教程。该教程在编写阶段，更新间隔可能会很长。
+Nukkit官方说过: nukkit是一款高性能的核能驱动的minecraft基岩版服务器,它的
+速度更快，性能相比pocketMine更高。
+```
+Nukkit is nuclear-powered server software for Minecraft Bedrock Edition. It has a few key advantages over other server software:
+
+Written in Java, Nukkit is faster and more stable.
+Having a friendly structure, it's easy to contribute to Nukkit's development and rewrite plugins from other platforms into Nukkit plugins.
+Nukkit is under improvement yet, we welcome contributions.
+```
+
+目前，,依托java语言的健壮性,nukkit形成了强大的生态，并且出现了很多分支，目前使用最广泛的分支是[NukkitX](http://nukkitx.com)
+
+感谢您能观看我们编写的教程。该教程在编写阶段，更新间隔可能会很长。
 请谅解。该教程是为了简化目前很多晦涩难懂的教程，使得有过java语法基础的朋友
 学习nukkit和了解nukkit。目前nukkit的学习难度主要在于其资料过少。我们将会
 自己整理和参考其他相关资料来编写该教程，也感谢您参与编写，造福大家
