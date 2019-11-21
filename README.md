@@ -31,6 +31,8 @@ Nukkit is under improvement yet, we welcome contributions.
 
 注意: 对于java的语法有一定了解可以观看此教程。
 本教程不涉及语法，只涉及nukkit的各种库的解释以便于开发
+
+未来，我们会开发nukkit-d,是对于nukkit设计思想的整理和重新实现，以解决目前nukkit维护难的问题
 #### 关于我们
 
 感兴趣者可以随时发送pr等
