@@ -1,7 +1,7 @@
 [上一章](第五章*如何使用配置文件.md) [下一章]()
 # 第一部分 第六章 如何编写plugin.yml
-参与编写者: MagicLu550
-#### 建议学习时间: 40分钟
+参与编写者: SmallasWater
+#### 建议学习时间: 10分钟
 ##### 学习要点: 了解plugin.yml内容
 1. 关于plugin.yml
 plugin.yml 是 nukkit加载插件 主要文件 在加载插件前必先加载
