@@ -4,6 +4,7 @@
 #### 建议学习时间: 10分钟
 ##### 学习要点: 了解plugin.yml内容
 1. 关于plugin.yml
+
 plugin.yml 是 nukkit加载插件 主要文件 在加载插件前必先加载
 
 2. plugin.yml构成
