@@ -1,4 +1,4 @@
-[上一章](第六章*如何编写plugin.yml.md) [下一章]()
+[上一章](第六章*如何编写plugin.yml.md) [下一章](第八章*案例:玩家进入信息等效果.md)
 # 第一部分 第七章 PluginBase类
 参与编写者: MagicLu550
 #### 建议学习时间: 60分钟
@@ -373,4 +373,4 @@ abstract public class PluginBase implements Plugin {
 
 18.reloadConfig()重新加载配置文件，使得里面信息程序可以读取到
 
-[上一章](第六章*如何编写plugin.yml.md) [下一章]()
+[上一章](第六章*如何编写plugin.yml.md) [下一章](第八章*案例:玩家进入信息等效果.md)
