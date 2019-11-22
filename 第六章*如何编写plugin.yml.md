@@ -3,11 +3,13 @@
 参与编写者: SmallasWater
 #### 建议学习时间: 10分钟
 ##### 学习要点: 了解plugin.yml内容
+
 1. 关于plugin.yml
 
 plugin.yml 是 nukkit加载插件 主要文件 在加载插件前必先加载
 
 2. plugin.yml构成
+
 ```yaml
 name: FirstPlugin             # nukkit运行时识别的插件名
 main: net.noyark.www.Example  # 主类名称
