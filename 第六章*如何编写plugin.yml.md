@@ -1,18 +1,20 @@
 [上一章](第五章*如何使用配置文件.md) [下一章](第七章*PluginBase类.md)
 # 第一部分 第六章 如何编写plugin.yml
-参与编写者: SmallasWater
+参与编写者: SmallasWater MagicLu550
 #### 建议学习时间: 10分钟
 ##### 学习要点: 了解plugin.yml内容
 
 1. 关于plugin.yml
 
-plugin.yml 是 nukkit加载插件 主要文件 在加载插件前必先加载
+plugin.yml 是 nukkit加载插件的主要文件 在加载插件前必先加载plugin.yml
+
+在[第二章](第二章*插件要素.md)中已经介绍了其大致的结构
 
 2. plugin.yml构成
 
 ```yaml
 name: FirstPlugin             # nukkit运行时识别的插件名
-main: net.noyark.www.Example  # 主类名称
+main: net.noyark.www.Example  # 主类名称,不能以cn.nukkit开头
 version: "0.0.1"              # 版本号
 author: 你的名字，这里指作者名称
 api: ["1.0.9"]                # 早期nukkit api为1.0.0，
@@ -31,4 +33,47 @@ commands:                     # Commands指令列表
       description: ""          # 权限的介绍
       default: op              # 权限限制 op / notop   notop为非op可执行 op 为仅限op执行
 ```
+3. 其他构成
+
+我们通过拆解PluginDescription类，可以知道
+
+PluginDescription.java
+```
+    private String name;
+    private String main;
+    private List<String> api;
+    private List<String> depend = new ArrayList<>();
+    private List<String> softDepend = new ArrayList<>();
+    private List<String> loadBefore = new ArrayList<>();
+    private String version;
+    private Map<String, Object> commands = new HashMap<>();
+    private String description;
+    private final List<String> authors = new ArrayList<>();
+    private String website;
+    private String prefix;
+    private PluginLoadOrder order = PluginLoadOrder.POSTWORLD;
+```
+其中load属性分为POSTWORD和STARTUP，他们区别官方在注释说明了
+
+PluginLoadOrder.java
+```
+/**
+     * 表示这个插件在服务器启动时就开始加载。<br>
+     * Indicates that the plugin will be loaded at startup.
+     *
+     * @see cn.nukkit.plugin.PluginLoadOrder
+     * @since Nukkit 1.0 | Nukkit API 1.0.0
+     */
+    STARTUP,
+    /**
+     * 表示这个插件在第一个世界加载完成后开始加载。<br>
+     * Indicates that the plugin will be loaded after the first/default world was created.
+     *
+     * @see cn.nukkit.plugin.PluginLoadOrder
+     * @since Nukkit 1.0 | Nukkit API 1.0.0
+     */
+    POSTWORLD
+```
+
+您也可以添加自己的网站: website属性
 [上一章](第五章*如何使用配置文件.md) [下一章](第七章*PluginBase类.md)
