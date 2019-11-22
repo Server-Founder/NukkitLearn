@@ -1,4 +1,4 @@
-[上一章](第五章*如何使用配置文件.md) [下一章]()
+[上一章](第五章*如何使用配置文件.md) [下一章](第七章*PluginBase类.md)
 # 第一部分 第六章 如何编写plugin.yml
 参与编写者: SmallasWater
 #### 建议学习时间: 10分钟
@@ -31,4 +31,4 @@ commands:                     # Commands指令列表
       description: ""          # 权限的介绍
       default: op              # 权限限制 op / notop   notop为非op可执行 op 为仅限op执行
 ```
-[上一章](第五章*如何使用配置文件.md) [下一章]()
+[上一章](第五章*如何使用配置文件.md) [下一章](第七章*PluginBase类.md)
