@@ -31,6 +31,7 @@ Nukkit is under improvement yet, we welcome contributions.
 学习nukkit和了解nukkit。目前nukkit的学习难度主要在于其资料过少。我们将会
 自己整理和参考其他相关资料来编写该教程，也感谢您参与编写，造福大家
 
+同时，转发本教程应当附上github原地址，不得任意转发和搬运，以及商业使用。
 注意: 对于java的语法有一定了解可以观看此教程。
 本教程不涉及语法，只涉及nukkit的各种库的解释以便于开发
 您所需要掌握的最基本的java基础体系
