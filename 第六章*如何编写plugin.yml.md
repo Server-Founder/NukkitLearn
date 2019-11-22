@@ -76,4 +76,5 @@ PluginLoadOrder.java
 ```
 
 您也可以添加自己的网站: website属性
+
 [上一章](第五章*如何使用配置文件.md) [下一章](第七章*PluginBase类.md)
