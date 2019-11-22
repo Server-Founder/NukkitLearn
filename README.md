@@ -57,6 +57,7 @@ Nukkit is under improvement yet, we welcome contributions.
         -- 继承
         -- 封装
         -- 多态
+      -- 枚举
       -- 注解
    -- 类库
       -- 反射
