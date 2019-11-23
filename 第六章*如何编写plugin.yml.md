@@ -53,7 +53,7 @@ PluginDescription.java
     private String prefix;
     private PluginLoadOrder order = PluginLoadOrder.POSTWORLD;
 ```
-其中load属性分为POSTWORD和STARTUP，他们区别官方在注释说明了
+其中load属性分为POSTWORLD和STARTUP，他们区别官方在注释说明了
 
 PluginLoadOrder.java
 ```
