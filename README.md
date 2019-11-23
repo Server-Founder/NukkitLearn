@@ -16,6 +16,7 @@
 #### 关于本教程
 
 本教程遵循[发现者小组公约](LICENSE)
+
 Nukkit官方说过: nukkit是一款高性能的核能驱动的minecraft基岩版服务器,它的
 速度更快，性能相比pocketMine更高。
 ```
