@@ -28,7 +28,7 @@ commands:                     # Commands指令列表
    description: "指令介绍"      # 指令的介绍
    permission: FirstPlugin.fp  # 指令权限 如果你希望插件仅允许 op执行 可以尝试这个
    aliases: []                 # 指令别名 可以增加中文名称
-  permissions:
+permissions:
     FirstPlugin.fp:             # 权限名称
       description: ""          # 权限的介绍
       default: op              # 权限限制 op / notop   notop为非op可执行 op 为仅限op执行
