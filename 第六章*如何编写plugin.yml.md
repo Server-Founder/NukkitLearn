@@ -74,6 +74,7 @@ PluginLoadOrder.java
      */
     POSTWORLD
 ```
+config里有一个load,分别为STARUP与PASTWORLD,前者使插件加载在地图之前,后者为使插件加载在地图之后,如果对地图加载有需求的话，必须填写PASTWORLD,否则将无法获取level
 
 您也可以添加自己的网站: website属性
 
