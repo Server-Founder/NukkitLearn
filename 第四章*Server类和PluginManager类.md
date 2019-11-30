@@ -1,7 +1,7 @@
 [上一章](第三章*计时器的介绍.md) [下一章](第五章*各种实体类的方法介绍.md)
 # 第二部分 第四章 Server类和PluginManager类
 参与编写者: MagicLu550
-#### 建议学习时间: 60分钟
+#### 建议学习时间: 20分钟
 ##### 学习要点: 了解Server类和PluginManager类
 
 一. Server
@@ -75,3 +75,22 @@ Nukkit.java Line. 108-115
     * removeWhitelist​(String) 删除一个玩家的白名单
     * shutdown() 关闭服务端
     * unloadLevel​(Level) 卸载一个世界
+二. PluginManager
+1. 概述
+PluginManager是插件管理器,很多的插件加载和数据储存都在这里进行,如监听器
+的注册等
+使用这个类也可以实现动态加载插件等一系列的操作,PluginManager的加载基于JavaPluginLoader
+
+2. 常用的方法
+    * addPermission(Permission) 添加Permission对象
+    * callEvent(Event) 触发一个事件
+    * clearPlugins() 清空插件
+    * disablePlugin(Plugin) 停止一个插件，这个插件会提前调用onDisable
+    并卸载
+    * getPlugin​(String) 得到其他插件的插件对象
+    * loadPlugin​(File) 加载一个插件，路径默认为服务端根目录
+    * loadPlugins​(File) 加载一个文件夹的插件
+    * registerEvents​(Listener, Plugin) 注册监听器
+    * removePermission​(String) 删除一个Permission
+    
+[上一章](第三章*计时器的介绍.md) [下一章](第五章*各种实体类的方法介绍.md)
