@@ -75,6 +75,7 @@ Nukkit.java Line. 108-115
     * removeWhitelist​(String) 删除一个玩家的白名单
     * shutdown() 关闭服务端
     * unloadLevel​(Level) 卸载一个世界
+    
 二. PluginManager
 1. 概述
 PluginManager是插件管理器,很多的插件加载和数据储存都在这里进行,如监听器
