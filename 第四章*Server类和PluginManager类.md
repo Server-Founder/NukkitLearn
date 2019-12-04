@@ -9,7 +9,7 @@
 1.概述
 
 Server类是插件几乎所有接口的入口，几乎一切的接口都是基于这个类获得的,而在nukkit中,Server类
-是作为一个对象单独存在,并且不允许外部调用其构造方法,但可以根据getInstance方法或者插件主类提供的
+是作为一个对象单独存在,Server的实例化意味着nukkit服务器的启动,并且不允许外部调用其构造方法,但可以根据getInstance方法或者插件主类提供的
 getServer方法可以获得,这里我们提到了两个获得Server的方法
 ```
     Server.getInstance();
