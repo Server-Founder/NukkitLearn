@@ -1,6 +1,9 @@
 # 在阅读本教程前，务必阅读本Readme
 # Nukkit教程整理
 
+- [中文(简体)](README.md)
+- [English](README_en.md)
+
 #### 友情项目
 
 [基于Java开发的SCPSL服务端](https://github.com/jsmod2-java-c/JSmod2-Core)
