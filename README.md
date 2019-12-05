@@ -3,6 +3,12 @@
 # 史上最详细的Nukkit教程
 #### Learning Nukkit Whoever you are!
 
+<html>
+    <body>
+        <input>11</input>
+    </body>
+</html>
+
 - [中文(简体)](README.md)
 - [English](README_en.md)
 
