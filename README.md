@@ -1,9 +1,5 @@
 # 在阅读本教程前，务必阅读本Readme
 
-<button>star<button><a class="social-count js-social-count" href="/Server-Founder/NukkitLearn/stargazers" aria-label="8 users starred this repository">
-           8
-        </a>
-
 # 史上最详细的Nukkit教程
 #### Learning Nukkit Whoever you are!
 
