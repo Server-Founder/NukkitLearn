@@ -1,5 +1,7 @@
 # 在阅读本教程前，务必阅读本Readme
-# Nukkit教程整理
+
+# 史上最详细的Nukkit教程
+#### Learning Nukkit Whoever you are!
 
 - [中文(简体)](README.md)
 - [English](README_en.md)
