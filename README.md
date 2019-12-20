@@ -1,5 +1,15 @@
 # 在阅读本教程前，务必阅读本Readme
 
+目前由官方承认的几个宣传贴
+
+https://www.minebbs.com/threads/dreamserver-nukkit-nukkit.2912/#post-13183
+
+https://www.mcplugin.cn/thread-1259-1-1.html
+
+https://www.mcbbs.net/forum.php?mod=viewthread&tid=927009&page=1#pid15854025
+
+https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
+
 # 史上最详细的Nukkit教程
 #### Learning Nukkit Whoever you are!
 
