@@ -1,4 +1,4 @@
-[上一章](第五章*如何使用配置文件.md) [下一章](第七章*PluginBase类.md)
+[上一章](第五章-如何使用配置文件.md) [下一章](第七章-PluginBase类.md)
 # 第一部分 第六章 如何编写plugin.yml
 参与编写者: SmallasWater MagicLu550
 #### 建议学习时间: 10分钟
@@ -8,7 +8,7 @@
 
 plugin.yml 是 nukkit加载插件的主要文件 在加载插件前必先加载plugin.yml
 
-在[第二章](第二章*插件要素.md)中已经介绍了其大致的结构
+在[第二章](第二章-插件要素.md)中已经介绍了其大致的结构
 
 2. plugin.yml构成
 
@@ -78,4 +78,4 @@ config里有一个load,分别为STARUP与POSTWORLD,前者使插件加载在地�
 
 您也可以添加自己的网站: website属性
 
-[上一章](第五章*如何使用配置文件.md) [下一章](第七章*PluginBase类.md)
+[上一章](第五章-如何使用配置文件.md) [下一章](第七章-PluginBase类.md)

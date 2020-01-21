@@ -1,13 +1,13 @@
-[上一章](第六章*如何编写plugin.yml.md) [下一章](第八章*案例玩家进入信息等效果.md)
+[上一章](第六章-如何编写plugin.yml.md) [下一章](第八章-案例玩家进入信息等效果.md)
 # 第一部分 第七章 PluginBase类
 参与编写者: MagicLu550
-#### 建议学习时间: 60分钟
+#### 建议学习时间: 60分钟 
 ##### 学习要点: 了解PluginBase的方法
 
 这里将会详细的介绍PluginBase类的常用方法。
 
 PluginBase实现了Plugin接口，是插件运行的委托父类。它的子类被认定为服务端的运行类，它有
-三个运行方法，在[第一章](第一章*如何搭建环境.md)已经提到,它的很多方法都是开发过程最常用的，
+三个运行方法，在[第一章](第一章-如何搭建环境.md)已经提到,它的很多方法都是开发过程最常用的，
 也是一切api调用的入口和途径
 
 PluginBase.java
@@ -367,10 +367,10 @@ abstract public class PluginBase implements Plugin {
 
 15.onCommand(...) 执行plugin.yml中定义的命令
 
-16.getResource(...) 见[第五章](第五章*如何使用配置文件.md)
+16.getResource(...) 见[第五章](第五章-如何使用配置文件.md)
 
 17.saveConfig() saveDefaultConfig()保存默认配置文件
 
 18.reloadConfig()重新加载配置文件，使得里面信息程序可以读取到
 
-[上一章](第六章*如何编写plugin.yml.md) [下一章](第八章*案例玩家进入信息等效果.md)
+[上一章](第六章-如何编写plugin.yml.md) [下一章](第八章-案例玩家进入信息等效果.md)
