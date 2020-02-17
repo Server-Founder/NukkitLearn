@@ -8,21 +8,37 @@
 
 Groovy是一种基于JVM（Java虚拟机）的敏捷开发语言，它结合了Python、Ruby和Smalltalk的许多强大的特性
 ，Groovy 代码能够与 Java 代码很好地结合，也能用于扩展现有代码。由于其运行在 JVM 上的特性，Groovy也可以使用其他非Java语言编写的库。
-1、 构建在强大的Java语言之上 并 添加了从Python，Ruby和Smalltalk等语言中学到的 诸多特征，例如动态类型转换、闭包和元编程（metaprogramming）支持。。
+
+1、 构建在强大的Java语言之上 并 添加了从Python，Ruby和Smalltalk等语言中学到的 诸多特征，例如动态类型转换、闭包和元编程（metaprogramming）支持。
+
 2、为Java开发者提供了 现代最流行的编程语言特性，而且学习成本很低（几乎为零）。
+
 3、 支持DSL（Domain Specific Languages领域特定语言）和其它简洁的语法，让代码变得易于阅读和维护。
+
 4、受检查类型异常(Checked Exception)也可以不用捕获。
+
 5、 Groovy拥有处理原生类型，面向对象以及一个Ant DSL，使得创建Shell Scripts变得非常简单。
+
 6、在开发Web，GUI，数据库或控制台程序时 通过 减少框架性代码 大大提高了开发者的效率。
+
 7、支持单元测试和模拟（对象），可以 简化测试。
+
 8、无缝集成 所有已经存在的 Java对象和类库。
+
 9、直接编译成Java字节码，这样可以在任何使用Java的地方 使用Groovy。  
+
 10、支持函数式编程，不需要main函数。
+
 11、一些新的运算符。
+
 12、默认导入常用的包。
+
 13、断言不支持jvm的-ea参数进行开关。
+
 14、支持对对象进行布尔求值。
+
 15、类不支持default作用域，且默认作用域为public。
+
 16、groovy中基本类型也是对象，可以直接调用对象的方法。
 
 groovy的最吸引人的特性是闭包，动态和静态类型的兼容，流行语法。
