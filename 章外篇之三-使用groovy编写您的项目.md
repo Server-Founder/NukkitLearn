@@ -1,4 +1,4 @@
-# NukkitLearn章外篇之二-插件中的多语言解决方案
+# NukkitLearn章外篇之二-Groovy
 
 参与编写者: MagicLu550
 
