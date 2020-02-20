@@ -178,3 +178,5 @@ class ShareInventoryPlugin extends PluginBase {
     }
 }
 ```
+另外，为了杜绝找不到类的相关异常，可以下载[依赖整合包](https://github.com/Server-Founder/Nukkit_GroovyLib),
+将前置插件设置为groovylib即可，在安装您的插件时，配套它使用。
