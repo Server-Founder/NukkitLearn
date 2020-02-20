@@ -19,7 +19,7 @@ https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
 
 #### 说明
 
-您可以在这里作为一本书观看教程: http://noyark.net/
+您可以在这里作为一本书观看教程: [http://nl.noyark.net/](http://nl.noyark.net/)
 
 本教程遵循[发现者小组公约](LICENSE)
 
