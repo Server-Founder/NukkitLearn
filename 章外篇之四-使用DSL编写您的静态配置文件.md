@@ -98,7 +98,7 @@ items{
 @Override
 void onEnable(){
     Example example = new Example(this.getDataFolder()+"/config.groovy")
-    example.get("items.hello.url") //获得hello,world
+    example.getValue("items.hello.url") //获得hello,world
 }
 
 ```
