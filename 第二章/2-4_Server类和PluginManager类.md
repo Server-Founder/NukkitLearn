@@ -1,5 +1,5 @@
-[上一章](第三章-计时器的介绍.md) [下一章](第五章-各种实体类的方法介绍.md)
-# 第二部分 第四章 Server类和PluginManager类
+[上一节](2-3_计时器的介绍.md) [下一节](2-5_各种实体类的方法介绍.md)
+# 第二章 第四节 Server类和PluginManager类
 参与编写者: MagicLu550
 #### 建议学习时间: 20分钟
 ##### 学习要点: 了解Server类和PluginManager类
@@ -34,7 +34,7 @@ Nukkit.java Line. 108-115
 2. Server类的常用方法
     * addOp(String) 可以添加op管理员的名称,name是玩家名称
     * addWhitelist(String) 可以添加白名单
-    * batchPackets​(Player[], DataPacket[]) 批量发送数据包,后面[数据包发送篇](第七章-如何发送数据包.md)详细讲解
+    * batchPackets​(Player[], DataPacket[]) 批量发送数据包,后面[数据包发送篇](2-7_如何发送数据包.md)详细讲解
     * broadMessage(String) 发送服务器广播信息，所有玩家可见
     * addRecipe​(Recipe) 添加配方,这个配方指包括合成、炉子、炼药台等使用的配方。
     * broadcastPacket​(Player[], DataPacket) 向所有玩家广播数据包
@@ -44,7 +44,7 @@ Nukkit.java Line. 108-115
     * getAllowFlight() 获得这个服务器是否是允许飞行的
     * getApiVersion() 获取插件api的版本
     * getCommandAliases() 将返回以(一个指令名对应着多个别名)为一对的Map集合
-    * getCommandMap() 获取指令Map,通过它可以注册一些命令,[前面已经说到过](第四章-如何编写命令.md)
+    * getCommandMap() 获取指令Map,通过它可以注册一些命令,[前面已经说到过](1-4_如何编写命令.md)
     * getDataPath() 获取服务端的数据目录
     * getDefaultGamemode() 获取服务端的默认模式(如创造模式等)
     * getDefaultLevel() 获取默认的世界对象,如World
@@ -94,4 +94,4 @@ PluginManager是插件管理器,很多的插件加载和数据储存都在这里
     * registerEvents​(Listener, Plugin) 注册监听器
     * removePermission​(String) 删除一个Permission
     
-[上一章](第三章-计时器的介绍.md) [下一章](第五章-各种实体类的方法介绍.md)
+[上一节](2-3_计时器的介绍.md) [下一节](2-5_各种实体类的方法介绍.md)
