@@ -2,11 +2,11 @@
 
 目前由官方承认的几个宣传贴
 
-https://www.minebbs.com/threads/dreamserver-nukkit-nukkit.2912/#post-13183
+https://www.minebbs.com/threads/dreamserver-nukkit-nukkit.2912/
 
-https://www.mcplugin.cn/thread-1259-1-1.html
+https://www.mcplugin.cn/thread-1259-1-1.html
 
-https://www.mcbbs.net/forum.php?mod=viewthread&tid=927009&page=1#pid15854025
+https://www.mcbbs.net/forum.php?mod=viewthread&tid=927009
 
 https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
 
@@ -19,7 +19,7 @@ https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
 
 #### 说明
 
-您可以在这里作为一本书观看教程: http://noyark.net/
+您可以在这里作为一本书观看教程: [http://nl.noyark.net/](http://nl.noyark.net/)
 
 本教程遵循[发现者小组公约](LICENSE)
 
@@ -154,6 +154,10 @@ QQ群: 931210534
    
    - [使用DSL编写配置文件](章外篇/章外篇之四-使用DSL编写您的静态配置文件.md)
    
+   - [使用groovy编写插件](章外篇/章外篇之三-使用groovy编写您的项目.md)
+   
+   - [使用DSL编写配置文件](章外篇/章外篇之四-使用DSL编写您的静态配置文件.md)
+
 #### 目录
 - [第一章 基础准备](第一章/1-0_前言.md)
   - [X] [如何搭建开发环境](第一章/1-1_如何搭建环境.md)
