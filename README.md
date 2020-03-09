@@ -75,6 +75,10 @@ Nukkit is under improvement yet, we welcome contributions.
 
 同时，转发本教程应当附上GitHub原地址，不得任意转发和搬运，以及商业使用。
 本教程不涉及语法，只涉及Nukkit的各种库的解释以便于开发
+
+基础推荐学习的地方
+[菜鸟教程](https://www.runoob.com/java/java-tutorial.html?tdsourcetag=s_pcqq_aiomsg)
+[w3cschool](https://www.w3cschool.cn/java/java-tutorial.html)
 您所需要掌握的最基本的Java基础体系
 ```
   --基础部分
