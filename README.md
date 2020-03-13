@@ -78,9 +78,10 @@ Nukkit is under improvement yet, we welcome contributions.
 
 基础推荐学习的地方
 
-[菜鸟教程](https://www.runoob.com/java/java-tutorial.html?tdsourcetag=s_pcqq_aiomsg)
-[w3cschool](https://www.w3cschool.cn/java/java-tutorial.html)
-[并发](https://blog.csdn.net/likun557/article/details/100148245)
+- [菜鸟教程](https://www.runoob.com/java/java-tutorial.html?tdsourcetag=s_pcqq_aiomsg)
+- [w3cschool](https://www.w3cschool.cn/java/java-tutorial.html)
+- [并发](https://blog.csdn.net/likun557/article/details/100148245)
+- [网络](https://www.cnblogs.com/cainiao-chuanqi/p/11338202.html#autoid-3-2-0)
 
 您所需要掌握的最基本的Java基础体系
 ```
