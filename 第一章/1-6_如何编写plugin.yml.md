@@ -17,7 +17,7 @@ plugin.yml 是 nukkit加载插件的主要文件 在加载插件前必先加载p
 name: FirstPlugin             # nukkit运行时识别的插件名
 main: net.noyark.www.Example  # 主类名称,不能以cn.nukkit开头
 version: "0.0.1"              # 版本号
-author: 你的名字，这里指作者名称  # 感谢qq1586235767的提议，作者名称不能使用纯数字，否则会发生类型转换异常
+author: 你的名字，这里指作者名称  # 感谢qq1586235767的提议，作者名称不能使用纯数字，否则会发生类型转换异常，您可以使用字符串避免这个问题
 api: ["1.0.9"]                # 早期nukkit api为1.0.0，
 # 目前大概为1.0.9
 depend: ["EconomyAPI"]        # 依赖的插件名称 添加后如果Plugins文件夹不存在添加的插件则关闭本插件
