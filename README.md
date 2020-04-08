@@ -23,9 +23,9 @@ https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
 
 本教程遵循[发现者小组公约](LICENSE)
 
-#### 友情项目
+#### 友情链接
 
-[基于Java开发的SCPSL服务端](https://github.com/jsmod2-java-c/JSmod2-Core)
+- [NukkitLearn视频讲解](https://search.bilibili.com/all?keyword=BV16z411b7et&from_source=nav_search_new)
 
 #### 关于主要作者
 
