@@ -61,8 +61,6 @@ public ElementButton(String text, ElementButtonImageData image) {
 
   例如"textures/blocks/bedrock.png" (type是"path"下) 即可在按钮左边显示一个基岩的图片
 
-
-
 - 一个简单的实例：
 
 ```java
@@ -72,7 +70,7 @@ class UI {
 	public static void menu(Player player) {
     	FormWindowSimple form = new FormWindowSimple("我是标题", "我是内容");
    	 	form.addButton(new ElementButton("我是按钮1"));
-    	form.addButton(new ElementButton("我是按钮2", new ElementButtonImageData("path", 		"textures/blocks/bedrock.png")));
+    	form.addButton(new ElementButton("我是按钮2", new ElementButtonImageData("path","textures/blocks/bedrock.png")));
     	form.addButton(new ElementButton("我是按钮3"));
     	player.showFormWindow(form, MENU); //将form发送给玩家,将MENU标记给了这个form
     
@@ -127,7 +125,7 @@ public void onFormResponse(PlayerFormRespondedEvent event) {
     if(id == UI.MENU) { //判断出这个UI界面是否是我们上面写的`menu`
         FormResponseSimple response = (FormResponseSimple) event.getResponse(); //这里需要强制类型转换一下
         //获取到被按的按钮的id(如果按"x"则返回-1)
-        //按钮id: 我们将上面的addButton中传入的ElementButton放入一个数组，返回的id就是被按的Button的角标
+        //重点: 按钮id: 我们将上面的addButton中传入的ElementButton放入一个数组，返回的id就是被按的Button的角标
         //例如：玩家按了"我是按钮1"这个按钮，则会返回0
         int clickedButtonId = response.getClickedButtonId();
         //分类别讨论
@@ -180,21 +178,123 @@ public void onFormResponse(PlayerFormRespondedEvent event) {
   - 简单实例
 
     ```java
-    class UI {
+    class UI implements Listener { //一般实际开发中不在这个类中写监听器
+        public static final int MENU = 114514;
     	public static void menu(Player player) {
             FormWindowCustom form = new FormWindowCustom("我是标题");
             // 添加一个标签组件
-            form.addElement(new ElementLabel("我是标签"));
+            form.addElement(new ElementLabel("我是标签"));  // 组件角标: 0 (Label也占一个元素角标)
             // 添加一个下滑块组件
-            form.addElement(new ElementDropdown("我是下滑块", Arrays.asList("元素1", "元素2", "元素3")));
+            form.addElement(new ElementDropdown("我是下滑块", Arrays.asList("元素1", "元素2", "元素3")));  // 组件角标: 1
             // 添加一个文本输入框组件
-            form.addElement(new ElementInput("我是文本输入框"));
+            form.addElement(new ElementInput("我是文本输入框"));  // 组件角标: 2
             // 添加一个水平滑块_1 (text, 最小值, 最大值, 滑动最小步数)
-            form.addElement(new ElementSlider("我是水平滑块", 0, 100, 1));
-            
+            form.addElement(new ElementSlider("我是水平滑块", 0, 100, 1));  // 组件角标: 3
+            // 添加一个水平滑块_2 
+            form.addElement(new ElementStepSlider("我是水平滑块", Arrays.asList("元素1", "元素2", "元素3")));  // 组件角标: 4
+            // 添加一个开关
+            form.addElement(new ElementToggle("我是开关"));  // 组件角标: 5
+            player.showFormWindow(form, MENU);
+        }
+        
+        // 另外，CustomForm会自带一个"提交"按钮，用于交付数据，我们无需添加
+        
+        // 监听器部分
+        @EventHandle
+        public void onFormResponse(PlayerFormRespondedEvent event) {
+            Player player = event.getPlayer();
+            int id = event.getFormID(); //这将返回一个form的唯一标识`id`
+            if(id == MENU){
+                FormResponseCustom response = (FormResponseCustom) event.getResponse();
+                //我们通过 FormResponseCustom 中提供的:
+                // - getDropdownResponse(int id) 返回Dropdown中被选择的元素的封装对象
+                // - getInputResponse(int id) 返回文本输入框中的字符串
+                // - getSliderResponse(int id) 返回数值水平滑块的浮点值
+                // - getStepSliderResponse(int id) 返回StepSlider中被选择的元素的封装对象
+                // - getToggleResponse(int id) 返回开关的布尔类型(开和关)
+    		   // 注意: getDropdownResponse和getStepSliderResponse返回的都是一个FormResponseData对象，我们需要调用它的getElementContent()获得被选元素的字符串数值
+                // id 和 SimpleForm中的按钮角标一样，从0开始往后标记
+                String dropDown = response.getDropdownResponse(1).getElementContent();
+                String input = response.getInputResponse(2);
+              float slider = response.getSliderResponse(3);
+                String stepSlider = response.getDropdownResponse(4).getElementContent();
+                boolean toggle = response.getToggleResponse(5);
+                // 获取到以上数据后就能进行一些数据传输了
+            }
+        }
+    }
+    ```
+    
+
+- 完成上述代码后，用户将会收到一个数据填写表格(CustomForm)，并且我们可以通过监听器去获取用户填入的数据
+
+三. Modal_Form
+
+- FormWindowModal中的构造方法
+
+  ```java
+  public FormWindowModal(String title, String content, String trueButtonText, String falseButtonText) {
+          this.title = title;
+          this.content = content;
+          this.button1 = trueButtonText;
+          this.button2 = falseButtonText;
+  }
+  ```
+
+  `title`和`content`不用多说，这里解释`trueButtonText`和`falseButtonText`
+
+  `trueButtonText`：填入一个字符串，但应填入"确定"，"同意"，"是"或者它们的近义词，这个将会是true的选项按钮
+
+  `falseButtonText`：填入一个字符串，但应填入"拒绝"，"否"，"返回"或者它们的近义词，这个将会是false的选项按钮
+
+  注意: ModalForm中只能填入这两个按钮，无法添加更多或者更少！并且按钮没有图标。
+
+  PS: ModalForm的所有功能其实都是可以用SimpleForm代替，不过我们通常会使用ModalForm对于用户确定某个行为所弹出的UI。
+
+  - 简单实例
+
+    ```java
+    class UI implements Listener {
+        public static final int MENU = 1433223;
+        public static void menu(Player player) {
+            FormWindowModal form = new FormWindowModal("我是标题", "我是内容", "点我确定", "点我取消"); //这就实例化好了一个ModalForm
+            player.showFormWindow(form, MENU); // 标记id并且发送
+        }
+        
+        @EventHandle
+        public void onFormResponse(PlayerFormRespondedEvent event) {
+            Player player = event.getPlayer();
+            int id = event.getFormID(); //这将返回一个form的唯一标识`id`
+            if(id == MENU) {
+                FormResponseModal response = (FormResponseModal) event.getResponse();
+                int id = response.getClickedButtonId();
+                //注意: 返回的按钮id是从1开始的，也就是说"true"代表1，"false"代表2
+                if(id == 1){
+                    //这里执行确定后的代码
+                }else{
+                    // 这里执行取消后的代码
+                }
+            }
         }
     }
     ```
 
-    
+  - 完成上述代码后，用户将收到一个是否确认界面，我们在监听器内写入确认或者取消后发生的代码
 
+四. 小案例
+
+- 张三想要一个按钮，如果他是OP的话，按钮text为"撤销OP"，并且点击就会撤销OP，如果他不是OP的话，按钮text为"给予OP"，点击后添加OP
+
+  - 我们在addButton的时候判断张三是否是op，如果是，则addButton("撤销OP")，如果不是，则addButton("给予OP")，这样就可以做到同一个位置的按钮对于不同状态的张三可以显示不同内容
+
+  - 我们在事件监听中，监听到如果张三按到了切换OP状态的这一个按钮，并且判断张三此时是不是OP，然后给予OP或者撤销OP。
+
+    这固然可以完成上面的需求，但是如果有一种状态，只能在创建UI时候能获取，在监听器中无法获取呢？假如上面的例子，我们无法在监听器中获取张三是否为OP，怎么办呢?
+
+    我们可以从Event中获取Form对象，根据clickButtonId来获取被按的按钮对象，进而获取它的text属性并判断是否含有"撤销"这一个字符串。就能做到无需检测张三此时的状态，而从一个按钮上的文本来进行判断。
+
+    这里代码就不贴了，感兴趣的可以自己去写一写这个小案例。
+
+五. 开发技巧
+
+- 我们会将一些拥有特定状态的人才会显示的按钮放到一个Form表格的最后一个。例如"OP系统"，这个按钮往往是在最后一个位置上的。这样可以不打乱整体的按钮角标值。只需在监听器中扩充一个角标就行(普通用户根本不会按到OP系统)
