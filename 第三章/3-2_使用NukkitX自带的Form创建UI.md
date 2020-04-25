@@ -69,7 +69,7 @@ class UI {
 
 	public static void menu(Player player) {
     	FormWindowSimple form = new FormWindowSimple("我是标题", "我是内容");
-   	 	form.addButton(new ElementButton("我是按钮1"));
+   	form.addButton(new ElementButton("我是按钮1"));
     	form.addButton(new ElementButton("我是按钮2", new ElementButtonImageData("path","textures/blocks/bedrock.png")));
     	form.addButton(new ElementButton("我是按钮3"));
     	player.showFormWindow(form, MENU); //将form发送给玩家,将MENU标记给了这个form
