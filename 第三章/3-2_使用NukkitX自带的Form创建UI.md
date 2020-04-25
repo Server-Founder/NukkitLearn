@@ -1,4 +1,4 @@
-[上一节]() [下一节]()
+[上一节](3-1_主要的Form种类及介绍.md) [下一节](3-2_使用外部库GUI创建UI.md)
 
 # 第三章 第二节 使用NukkitX自带的Form创建UI
 
@@ -61,7 +61,7 @@ public ElementButton(String text, ElementButtonImageData image) {
 
   例如"textures/blocks/bedrock.png" (type是"path"下) 即可在按钮左边显示一个基岩的图片
 
-- 一个简单的实例：
+- 简单的实例：
 
 ```java
 class UI {
@@ -146,7 +146,7 @@ public void onFormResponse(PlayerFormRespondedEvent event) {
 }
 ```
 
-完成上述代码后，用户将收到一个UI界面，并且按任意按钮都会发送信息提示
+完成上述代码后，用户将收到一个UI界面，并且按任意按钮都会发送信息提示。在外部只需要UI.menu(player)即可召唤UI
 
 二. Custom_Form
 
@@ -298,3 +298,5 @@ public void onFormResponse(PlayerFormRespondedEvent event) {
 五. 开发技巧
 
 - 我们会将一些拥有特定状态的人才会显示的按钮放到一个Form表格的最后一个。例如"OP系统"，这个按钮往往是在最后一个位置上的。这样可以不打乱整体的按钮角标值。只需在监听器中扩充一个角标就行(普通用户根本不会按到OP系统)
+
+[上一节](3-1_主要的Form种类及介绍.md) [下一节](3-2_使用外部库GUI创建UI.md)
