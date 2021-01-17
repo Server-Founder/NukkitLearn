@@ -1,5 +1,7 @@
 # 在阅读本教程前，务必阅读本Readme
 
+目前作者忙于学习，暂时无暇更新，但欢迎各位补充里面未填的坑！
+
 目前由官方承认的几个宣传贴
 
 https://www.minebbs.com/threads/dreamserver-nukkit-nukkit.2912/
