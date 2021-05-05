@@ -10,7 +10,7 @@ Easy4Form是smartcmd写的一个十分简单的外部Form库
  
 使用Easy4Form，你可以十分方便的写出Form交互功能
 
-1.EZ4F包含的类:
+1.EZ4F包含的类: 
 ![images/img_1.png](img_1.png)
 怎么样，是不是很简单?
 
