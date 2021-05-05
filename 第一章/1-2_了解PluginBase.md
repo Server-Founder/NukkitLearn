@@ -1,5 +1,5 @@
 # 第一章 第二节 了解PluginBase
-参与编写者: smartcmd MagicLu550
+参与编写者: smartcmd,MagicLu550
 #### 建议学习时间: 50分钟
 ##### 学习要点: 了解PluginBase类中的各个方法，以及他们的作用
 
