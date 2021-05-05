@@ -197,7 +197,7 @@ QQ群: 931210534
   - [X] [主要的Form种类及介绍](第三章/3-1_主要的Form种类及介绍.md)
   - [X] [使用NukkitX自带的Form创建UI](第三章/3-2_使用NukkitX自带的Form创建UI.md)
   - [X] [使用外部库GUI创建UI](第三章/3-3_使用外部库GUI创建UI.md)
-  - [X] [使用外部库GUI创建UI](第三章/3-4_介绍一个新的外部库-Easy4Form.md)
+  - [X] [新的外部库Easy4Form](第三章/3-4_介绍一个新的外部库-Easy4Form.md)
 - 第四章 nukkit实用操作
   - [ ] 粒子
   - [ ] 药水
