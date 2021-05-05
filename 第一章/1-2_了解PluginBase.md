@@ -1,5 +1,5 @@
 # 第一章 第二节 了解PluginBase
-参与编写者: smartcmd
+参与编写者: smartcmd MagicLu550
 #### 建议学习时间: 50分钟
 ##### 学习要点: 了解PluginBase类中的各个方法，以及他们的作用
 
@@ -32,7 +32,7 @@ public class PluginMain extends PluginBase{
     }
 }
 ```
-###一些技巧
+### 一些技巧
 
 很多的操作，例如注册Task,监听器，都需要插件主类对象
 然而我们在开发中经常遇到这种情况：如果其他类需要插件主类对象，我们需要怎么实现呢？
