@@ -21,11 +21,13 @@ MagicLu550 绿泡泡 LT_Name Darker 若水 innc11 MayFlyOvO zsy 蜜柑 smartcmd
 
 https://www.minebbs.com/threads/dreamserver-nukkit-nukkit.2912/
 
-https://www.mcplugin.cn/thread-1259-1-1.html
-
 https://www.mcbbs.net/forum.php?mod=viewthread&tid=927009
 
 https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
+
+#### 友情链接
+
+1. 云易插件站 www.ieasycloudy.top
 
 # 史上最详细的Nukkit教程
 #### Learning Nukkit Whoever you are!
