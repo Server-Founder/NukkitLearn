@@ -32,7 +32,7 @@ Easy4Form是smartcmd写的一个十分简单的外部Form库
 并保证你的服务器中有加载Easy4Form插件(可以自行构建,github坐标在下面...实在不行你把scope改成compile也行...)
 
 1.EZ4F包含的类: 
-![images/img_1.png](img_1.png)
+![../images/img_1.png](../images/img_1.png)
 怎么样，是不是很简单?
 
 2.使用
