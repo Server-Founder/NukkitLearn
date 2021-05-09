@@ -12,7 +12,25 @@
 
 写UI视图 ——> 监听交互并处理。可是人类总是想着各种方法偷懒，这一节就引出外部库 GUI (作者: him188)
 
-GUI: [Github地址](https://github.com/Him188/GUI) ，使创建UI的方式变得更加简洁 注: GUI的maven仓库已经失效，只能下载jar依赖。
+GUI: [Github地址](https://github.com/Him188/GUI) ，使创建UI的方式变得更加简洁 注: GUI的maven仓库已经失效，~~只能下载jar依赖。~~
+
+有个代替的仓库地址可以用，如下: (smartcmd的仓库)
+```xml
+<repositories>
+    <repository>
+        <id>ck</id>
+        <url>http://finalgame.cn:51460/repository/cookiestudio/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+<dependency>
+  <groupId>moe.him188</groupId>
+  <artifactId>gui</artifactId>
+  <version>1.15.1</version>
+</dependency>
+</dependencies>
+```
 
 另外介绍一下 FormAPI [GitHub地址](https://github.com/qPexLegendary/FormAPI)  使用这个依赖也可以达到更简洁创建UI，不过它可能会有一种打不开UI的bug   
 

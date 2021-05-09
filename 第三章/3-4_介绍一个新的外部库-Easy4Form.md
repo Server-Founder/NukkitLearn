@@ -32,7 +32,7 @@ Easy4Form是smartcmd写的一个十分简单的外部Form库
 并保证你的服务器中有加载Easy4Form插件(可以自行构建,github坐标在下面...实在不行你把scope改成compile也行...)
 
 1.EZ4F包含的类: 
-![../images/3-4-01.png](../images/img_1.png)
+![../images/3-4-01.png](../images/3-4-01.png)
 怎么样，是不是很简单?
 
 2.使用
@@ -47,6 +47,9 @@ bf.setResponseAction((e) ->{//e是此Form的ResponseEvent对象(ez4f会保证此
     ...//这里不需要判空，ez4f会代替你处理这些细节
 });
 bf.sendToPlayer(player);//注意这里
+
+BFormWindowSimple.Builder bfb = BFormWindowSimple.getBuilder();//也可以用Builder
+bfb.addButton(...).setResponseAction(...).setTitle(...).setContent(...).build().sendToPlayer(Player);
 ```
 
 搭配lambda表达式，是不是很方便？
