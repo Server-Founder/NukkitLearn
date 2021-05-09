@@ -2,6 +2,10 @@
 
 目前作者忙于学习，暂时无暇更新，但欢迎各位补充里面未填的坑！
 
+#### 鸣谢 主要编写者
+
+MagicLu550 绿泡泡 LT_Name Darker 若水 innc11 MayFlyOvO zsy 蜜柑 smartcmd
+
 #### 转载说明
 
 未经作者许可转载本系列文章任何内容的，视为已向作者支付100元人民币稿酬。
@@ -17,11 +21,13 @@
 
 https://www.minebbs.com/threads/dreamserver-nukkit-nukkit.2912/
 
-https://www.mcplugin.cn/thread-1259-1-1.html
-
 https://www.mcbbs.net/forum.php?mod=viewthread&tid=927009
 
 https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
+
+#### 友情链接
+
+1. 云易插件站 www.ieasycloudy.top
 
 # 史上最详细的Nukkit教程
 #### Learning Nukkit Whoever you are!
@@ -177,15 +183,17 @@ QQ群: 931210534
 
    - [常用工具](章外篇/索引-常用工具的网页索引.md)
 #### 目录
+- 前言
+  - [前言](前言/前言.md)
+  - [如何搭建环境](前言/如何搭建环境.md)
 - [第一章 基础准备](第一章/1-0_前言.md)
-  - [X] [如何搭建开发环境](第一章/1-1_如何搭建环境.md)
-  - [X] [插件要素](第一章/1-2_插件要素.md)
+  - [X] [如何搭建开发环境](第一章/1-1_什么是插件.md)
+  - [X] [什么是插件](第一章/1-2_了解PluginBase.md)
   - [X] [如何编写监听器](第一章/1-3_如何编写监听器.md)
   - [X] [如何编写指令](第一章/1-4_如何编写命令.md)
   - [X] [如何使用配置文件](第一章/1-5_如何使用配置文件.md)
   - [X] [如何编写plugin.yml](第一章/1-6_如何编写plugin.yml.md)
-  - [X] [PluginBase类](第一章/1-7_PluginBase类.md)
-  - [X] [练习案例](第一章/1-8_案例玩家进入信息等效果.md)
+  - [X] [练习案例](第一章/1-7_案例玩家进入信息等效果.md)
 - [第二章 nukkit的工具和各种事件介绍](第二章/2-0_前言.md)
   - [X] [主要的事件的介绍](第二章/2-1_主要的事件介绍.md)
   - [X] [事件相关方法](第二章/2-2_事件相关方法.md)
@@ -197,7 +205,8 @@ QQ群: 931210534
 - [第三章 nukkit的UI操作](第三章/3-0_前言.md)
   - [X] [主要的Form种类及介绍](第三章/3-1_主要的Form种类及介绍.md)
   - [X] [使用NukkitX自带的Form创建UI](第三章/3-2_使用NukkitX自带的Form创建UI.md)
-  - [X] [使用外部库GUI创建UI](第三章/3-2_使用外部库GUI创建UI.md)
+  - [X] [使用外部库GUI创建UI](第三章/3-3_使用外部库GUI创建UI.md)
+  - [X] [新的外部库Easy4Form](第三章/3-4_介绍一个新的外部库-Easy4Form.md)
 - 第四章 nukkit实用操作
   - [ ] 粒子
   - [ ] 药水

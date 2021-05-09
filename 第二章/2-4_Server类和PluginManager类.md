@@ -44,7 +44,7 @@ Nukkit.java Line. 108-115
     * getAllowFlight() 获得这个服务器是否是允许飞行的
     * getApiVersion() 获取插件api的版本
     * getCommandAliases() 将返回以(一个指令名对应着多个别名)为一对的Map集合
-    * getCommandMap() 获取指令Map,通过它可以注册一些命令,[前面已经说到过](1-4_如何编写命令.md)
+    * getCommandMap() 获取指令Map,通过它可以注册一些命令,[前面已经说到过](../第一章/1-4_如何编写命令.md)
     * getDataPath() 获取服务端的数据目录
     * getDefaultGamemode() 获取服务端的默认模式(如创造模式等)
     * getDefaultLevel() 获取默认的世界对象,如World
