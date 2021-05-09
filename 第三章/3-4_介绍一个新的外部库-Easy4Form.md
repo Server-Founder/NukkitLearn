@@ -47,6 +47,9 @@ bf.setResponseAction((e) ->{//e是此Form的ResponseEvent对象(ez4f会保证此
     ...//这里不需要判空，ez4f会代替你处理这些细节
 });
 bf.sendToPlayer(player);//注意这里
+
+BFormWindowSimple.Builder bfb = BFormWindowSimple.getBuilder();//也可以用Builder
+bfb.addButton(...).setResponseAction(...).setTitle(...).setContent(...).build().sendToPlayer(Player);
 ```
 
 搭配lambda表达式，是不是很方便？
