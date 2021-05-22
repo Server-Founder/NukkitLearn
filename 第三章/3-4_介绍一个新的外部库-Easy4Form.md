@@ -15,7 +15,7 @@ Easy4Form是smartcmd写的一个十分简单的外部Form库
 <repositories>
     <repository>
         <id>ck</id>
-        <url>http://finalgame.cn/repository/cookiestudio/</url>
+        <url>http://finalgame.cn:1000/repository/cookiestudio/</url>
     </repository>
 </repositories>
 
