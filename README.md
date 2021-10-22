@@ -153,7 +153,7 @@ Nukkit is under improvement yet, we welcome contributions.
 
 QQ群: 931210534
 
-![QQ群](images/0-00.png)
+![QQ群](images/0-00.jpg)
 
 #### 贡献标准和须知
 
