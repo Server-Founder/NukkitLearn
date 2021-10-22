@@ -1,108 +1,85 @@
-# 在阅读本教程前，务必阅读本Readme
+# 史上最详细的Nukkit教程 - NukkitLearn
+###### ——Learning Nukkit whoever you are!
 
-目前作者忙于学习，暂时无暇更新，但欢迎各位补充里面未填的坑！
+# 在阅读本教程之前，请务必仔细阅读本文档
 
-#### 鸣谢 主要编写者
+组内的各位都忙于日常，所以更新速度会降低。如果您有补充教程的意愿，欢迎推PR或入群交流！
 
-MagicLu550 绿泡泡 LT_Name Darker 若水 innc11 MayFlyOvO zsy 蜜柑 smartcmd
-
-#### 转载说明
-
-未经作者许可转载本系列文章任何内容的，视为已向作者支付100元人民币稿酬。
-本人微信: lu843983728
-
-您也可以免费转发本教程，但需要向作者申请，并且说明转载位置，署以作者的姓名。
-本人qq: 843983728
-
-感谢您的理解，若不遵循以上原则，且由本人或经举报发现侵权行为，将联系相关平台下架。
-并且加入黑名单。
-
-目前由官方承认的几个宣传贴
-
-https://www.minebbs.com/threads/dreamserver-nukkit-nukkit.2912/
-
-https://www.mcbbs.net/forum.php?mod=viewthread&tid=927009
-
-https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
-
-#### 友情链接
-
-1. 云易插件站 www.ieasycloudy.top
-
-# 史上最详细的Nukkit教程
-#### Learning Nukkit Whoever you are!
-
+## Choose your language:
 
 - [中文(简体)](README.md)
 - [English](README_en.md)
 
-#### 说明
+### 以下是很长一段的说明
 
-您可以在这里作为一本书观看教程: [http://nl.noyark.net/](http://nl.noyark.net/)
+嗨！您可以在这里以更加舒适的方式阅读本教程：[http://nl.noyark.net/](http://nl.noyark.net/)
+
+当然，您也可以通过观看 [Bilibili - NukkitLearn插件编写教程](https://www.bilibili.com/video/BV1R34y1D7FW) 的方式学习Nukkit插件编写。
+视频教程更新速度不定，我们仍然建议您阅读文字学习。
 
 本教程遵循[发现者小组公约](LICENSE)
 
-#### 友情链接
 
-- [NukkitLearn视频讲解](https://search.bilibili.com/all?keyword=BV16z411b7et&from_source=nav_search_new)
+#### 您可能需要了解的热知识
 
-#### 关于主要作者
+- 阅读本教程之前，请您先预习 Java 基础。
+- 催更人请点击右上角。
+- 我们不参与任何与 Minecraft 有关，但与本教程无关的教程。
+- 您可以就问题发送Issues。回复间隔会长，但不会回答例如 **搭建服务器**、 **Java基础** 等与教程无关的问题。我们仍推荐您加入QQ群交流。
+- 实际上，作者因学业等多种原因早已淡坑，**但仍然能保证教程的质量**，请您放心阅读。如您遇到教程内任何的疏漏或 Bug ，请您及时联系作者处理，感谢您的参与。
 
-事实上作者上已经退坑了，但是不影响写教程，只是有几点还请悉知:
-- 不要问如何搭建服务器；
-- 不要PM任何有关人员定制插件；
-- 除了写这个教程，作者不会参与任何和Minecraft有关的活动和交易；
-- 本教程需要一定的Java基础，请先做好预习功课，并且作者不会回答任何基础的问题；
-- 作者目前是高中学生,因此时间并不充裕，更新速度请大家海涵；
-- 如有任何疏漏或Bug的存在，还请指正；
+#### 作者的扯皮——关于本教程
 
-#### 作者的扯皮
+Nukkit核心作为一个服务端开发框架，虽然性能优越，吸引了大批的开发者加入开发，但教程稀少，学习难度大，使很多小白望而却步。
 
-Nukkit核心作为一个服务端开发框架，虽然性能优越，吸引了大批的开发者加入开发，但教程稀少，学习难度大，使很多小白
-望而却步，基于目前很多人对于教程的渴望，包括作者在初学的时候只能通过到处询问和看核心源码来了解如何使用一个东西，
-但并不是所有的人都能安心去看核心源码或者到处询问问题。同时，本教程会重复强调一件事情: 打好基础，本教程已经列出
-您需要掌握的java基础，什么0基础直接学习nukkit都是骗人的，作者已经见过很多这样的初学者，很少的人通过这种方式
-学会(无疑是一种懒散的行为)，nukkit事实上就是学习一个新的api,并无很大的入门难度，只要您学习了基础，就能很快从
-这里得到启发，并参与到nukkit的大家庭。
+基于目前很多人对于教程的渴望，包括作者在初学的时候只能通过到处询问和看核心源码来了解如何使用一个东西，但并不是所有的人都能安心去看核心源码或者到处询问问题。同时，本教程会重复强调一件事情：打好基础。
 
-主作者其实很和蔼，但是对于简单的问题作者由于时间问题是不能回答的，也不能干刷屏之类的事情，再和蔼的人也会把你给
-屏蔽，当然，作者坚持开放原则，如果有相关问题，可以issues发表您的疑问。
+本教程**已经列出您需要掌握的Java基础**，什么0基础直接学习Nukkit**都是骗人的**，作者已经见过很多这样的初学者，很少的人通过这种方式学会(无疑是一种懒散的行为)，
+
+Nukkit事实上就是学习一个新的API，并无很大的入门难度。
+只要您学习了基础，就能很快从这里得到启发，并参与到Nukkit的大家庭。
+
+主作者其实很和蔼，但是对于简单的问题作者由于时间问题是不能回答的，也不能干刷屏之类的事情，**再和蔼的人也会把你给屏蔽**。
+当然，作者坚持开放原则，如果有相关问题，可以发送Issue提出您的疑问。
 
 同时，记得给项目一个star支持一下，并且将这个项目宣传给别人，在支持作者同时，造福他人。您的支持和宣传就是作者写下去的动力，
+
 希望这个教程可以帮到您，我们由衷的感谢:)
 
 --- MagicLu550
 
-#### 关于本教程
+### 转载说明
 
-Nukkit官方说过: Nukkit是一款高性能的核能驱动的Minecraft基岩版服务器,它的
-速度更快，性能相比PocketMine更高。
-```
-Nukkit is nuclear-powered server software for Minecraft Bedrock Edition. It has a few key advantages over other server software:
+>首先，感谢您对原创作品的认可与支持。您的转载可以让我们的教程受益更多的人。
+>在您转载之前，请您首先仔细阅读一段不长的转载说明。
 
-Written in Java, Nukkit is faster and more stable.
-Having a friendly structure, it's easy to contribute to Nukkit's development and rewrite plugins from other platforms into Nukkit plugins.
-Nukkit is under improvement yet, we welcome contributions.
-```
+您在转载本教程前，**应首先征得作者的同意**，并**在转载注明出处与作者名**。
+如有需要，请联系QQ: 843983728，并**备注您的来意**。这会让效率更加高效。
 
-目前，依托Java语言的健壮性,Nukkit形成了强大的生态，并且出现了很多分支，目前使用最广泛的分支是[NukkitX](http://nukkitx.com)
+**未经作者许可转载本系列文章的任何内容的，将自动视为已向作者支付100元人民币稿酬。**
+收款微信账号: lu843983728；
 
-感谢您能观看我们编写的教程。该教程在编写阶段，更新间隔可能会很长。
-请谅解。该教程是为了简化目前很多晦涩难懂的教程，使得有过Java语法基础的朋友
-能方便地了解Nukkit和学习Nukkit. 目前Nukkit的学习难度主要在于其资料过少。
-我们将会整理和参考其他相关资料来编写该教程，也感谢您参与编写，造福大家
+若作者或经举报发现任何形式的侵权行为的，
+组内将联系相关平台进行下架的申诉，**~~并将挂上奇人共赏~~。**
 
-同时，转发本教程应当附上GitHub原地址，不得任意转发和搬运，以及商业使用。
-本教程不涉及语法，只涉及Nukkit的各种库的解释以便于开发
 
-基础推荐学习的地方
+### 目前由官方承认的几个宣传贴
+
+MineBBS: [[DreamServer] Nukkit教程整理计划 - 让所有人都能开发nukkit](https://www.minebbs.com/threads/dreamserver-nukkit-nukkit.2912/)
+
+MCBBS: [[DreamServer] Nukkit教程整理计划 - 让所有人都能开发nukkit](https://www.mcbbs.net/forum.php?mod=viewthread&tid=927009)
+
+MCBBS - Pioneer Group分支: https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
+
+
+### 我们推荐您前往以下站点学习Java基础
 
 - [菜鸟教程](https://www.runoob.com/java/java-tutorial.html?tdsourcetag=s_pcqq_aiomsg)
 - [w3cschool](https://www.w3cschool.cn/java/java-tutorial.html)
 - [并发](https://blog.csdn.net/likun557/article/details/100148245)
 - [网络](https://www.cnblogs.com/cainiao-chuanqi/p/11338202.html#autoid-3-2-0)
 
-您所需要掌握的最基本的Java基础体系
+### 您所需要掌握的最基本的Java基础体系一览
 ```
   --基础部分
     -- 语法
@@ -144,16 +121,22 @@ Nukkit is under improvement yet, we welcome contributions.
       -- 系统类库
 
 ```
-未来，我们会开发Nukkit-d,是对于Nukkit设计思想的整理和重新实现，以解决目前nukkit维护难的问题
-#### 关于我们
 
-如果您有兴趣可以随时发送Pr等
-本教程不定期更新，大概寒假时期更新最快
-相关意见可以联系843983728@qq.com或者加QQ:843983728
+### 
 
-QQ群: 931210534
+#### 鸣谢 主要编写者
 
-![QQ群](images/0-00.png)
+MagicLu550 绿泡泡 LT_Name Darker 若水 innc11 MayFlyOvO zsy smartcmd ~~愉悦师柑也~~
+
+#### 联系我们
+
+主作者QQ：843983728
+> 请注明来意。
+
+NukkitLearn官方群：931210534
+> 进群请阅读群规。禁止任何形式的广告。
+
+![QQ群二维码](images/0-00.png)
 
 #### 贡献标准和须知
 
@@ -226,3 +209,7 @@ QQ群: 931210534
 + 专题
 + 提示信息
 ```
+
+### 友情链接
+
+1. ~~云易插件站(升级维护中)~~
