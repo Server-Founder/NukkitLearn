@@ -62,6 +62,13 @@ Nukkit事实上就是学习一个新的API，并无很大的入门难度。
 若作者或经举报发现任何形式的侵权行为的，
 组内将联系相关平台进行下架的申诉，**~~并将挂上奇人共赏~~。**
 
+**本教程完全免费。请勿与他人进行任何交易！**
+
+**本教程完全免费。请勿与他人进行任何交易！**
+
+**本教程完全免费。请勿与他人进行任何交易！** 
+
+如您已与他人交易，请立刻申请退款、向我们举报、发布帖子警告他人避免上当！
 
 ### 目前由官方承认的几个宣传贴
 
@@ -69,7 +76,7 @@ MineBBS: [[DreamServer] Nukkit教程整理计划 - 让所有人都能开发nukki
 
 MCBBS: [[DreamServer] Nukkit教程整理计划 - 让所有人都能开发nukkit](https://www.mcbbs.net/forum.php?mod=viewthread&tid=927009)
 
-MCBBS - Pioneer Group分支: https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2
+MCBBS - Pioneer Group分支: [[bedrock][DreamServerGroup] Nukkit插件从入门到精通 总集篇](https://www.mcbbs.net/forum.php?mod=viewthread&tid=930861&mobile=2)
 
 
 ### 我们推荐您前往以下站点学习Java基础
@@ -133,7 +140,7 @@ MagicLu550 绿泡泡 LT_Name Darker 若水 innc11 MayFlyOvO zsy smartcmd ~~愉�
 主作者QQ：843983728
 > 请注明来意。
 
-NukkitLearn官方群：931210534
+NukkitLearn官方群QQ：931210534，也可扫下方码入群
 > 进群请阅读群规。禁止任何形式的广告。
 
 ![QQ群二维码](images/0-00.png)
@@ -147,7 +154,7 @@ NukkitLearn官方群：931210534
 5. 请尽量以第一章为范本编写您的内容。
 6. 如果有知识缺点，请在Readme里注明这个缺点出处，写在知识缺点里,知识缺点在章节中标注。
 7. 教程补充首要的是解决知识缺点
-8. 由于编写人数较少,教程不避免的会有错误，漏洞，不严谨，如果发现，可以发送pullRequest参与修改
+8. 由于编写人数较少,教程不避免的会有错误，漏洞，不严谨，如果发现，可以发送PR参与修改
 
 #### 知识缺点:
    - 关于fallBackPrefix的作用 - 第二章和第四章 [1]
